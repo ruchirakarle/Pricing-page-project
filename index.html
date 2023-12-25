@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"href="style.css">
+</head>
+<body>
+  <div class="currency-selector">
+    <label for="currency">Select Currency:</label>
+    <select id="currency" onchange="updateCurrencySymbol()">
+      <option value="INR">INR</option>
+      <option value="$">USD</option>
+      <option value="€">Euro</option>
+    </select>
+  </div>
+
+  <div class="container">
+    <div class="top">
+      <h1>Netflix Plans & Pricing</h1>
+      <div class="toggle-btn">
+        <span style="margin: 0.8em;">Annually</span>
+        <label class="switch">
+          <input type="checkbox" id="checbox" onclick="check()" ; />
+          <span class="slider round"></span>
+        </label>
+        <span style="margin: 0.8em;">Monthly</span></div>
+    </div>
+
+    <div class="package-container">
+      <div class="packages">
+        <h1>Basic</h1>
+        <h2 class="text1">INR 299.99</h2>
+        <h2 class="text2">INR 650.99</h2>
+        <ul class="list">
+          <li class="first">Unlimited movies</li>
+          <li>Watch on 1 device</li>
+          <li>Watch in HD</li>
+          <li>Email Support</li>
+        </ul>
+        <a href="#" class="button button1">Start Now</a>
+      </div>
+      <div class="packages">
+        <h1>Standard</h1>
+        <h2 class="text1">INR 399.99</h2>
+        <h2 class="text2">INR 999.99</h2>
+        <ul class="list">
+          <li class="first">Basic ++</li>
+          <li>Supports 2 device</li>
+          <li>Watch in Full HD</li>
+          <li>Free mobile games</li>
+        </ul>
+        <a href="#" class="button button2">Start Now</a>
+      </div>
+      <div class="packages">
+        <h1>Premium</h1>
+        <h2 class="text1">INR 499.99</h2>
+        <h2 class="text2">INR 1199.99</h2>
+        <ul class="list">
+          <li class="first">Standard ++</li>
+          <li>Hotstar sports series</li>
+          <li>Supports 6 devices</li>
+          <li>watch in Ultra HD</li>
+        </ul>
+        <a href="#" class="button button3">Start Now</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
